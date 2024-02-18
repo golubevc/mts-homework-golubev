@@ -6,8 +6,9 @@ class Taskgit {
         Scanner console = new Scanner(System.in);
         int a = console.nextInt();
         int b = console.nextInt();
+        int bugfix = console.nextInt();
 
-        System.out.println(a + b);
+        System.out.println(a + b + bugfix);
 
     }
 }
