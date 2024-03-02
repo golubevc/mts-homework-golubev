@@ -1,3 +1,5 @@
+package Interface;
+
 import javax.lang.model.element.Name;
 
 public interface Animal {

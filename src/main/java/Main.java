@@ -1,14 +1,10 @@
-import java.util.Scanner;
-
-
-class Taskgit {
+public class Main {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        int a = console.nextInt();
-        int b = console.nextInt();
-        int bugfix = console.nextInt();
+            CreateAnimalServiceImpl createAnimalService = new CreateAnimalServiceImpl();
+            createAnimalService.createAnimal();
+            createAnimalService.addAnimal(3);
+            createAnimalService.addAnimal();
 
-        System.out.println(a + b + bugfix);
-
+        }
     }
 }

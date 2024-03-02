@@ -1,4 +1,4 @@
-import java.security.ProtectionDomain;
+import Interface.Animal;
 
 public class AbstractAnimal implements Animal {
     protected String breed;
@@ -42,6 +42,25 @@ public class AbstractAnimal implements Animal {
 
     protected String character;
 
+    @Override
+    public void character() {
+
+    }
+
+    @Override
+    public void breed() {
+
+    }
+
+    @Override
+    public void name() {
+
+    }
+
+    @Override
+    public void cost() {
+
+    }
 }
 
 
