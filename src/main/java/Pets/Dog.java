@@ -1,4 +1,6 @@
+package Pets;
 public class Dog extends Pet {
+
     private String name;
     private String color;
 
@@ -18,8 +20,13 @@ public class Dog extends Pet {
         this.color = color;
     }
 
-    public Dog(String x) {
+    public Dog() {
         name = x;
+    }
+
+    @Override
+    public void voice() {
+        System.out.println("Гав-гав!");
     }
 
 };

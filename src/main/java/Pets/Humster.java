@@ -1,3 +1,6 @@
+import Pets.Pet;
+
+
 public class Humster extends Pet {
     private String name;
     private String color;
@@ -18,7 +21,7 @@ public class Humster extends Pet {
         this.color = color;
     }
 
-    public Cat(String x) {
+    public void Cat(String x) {
         name = x;
     }
 

@@ -1,46 +1,46 @@
 import Interface.Animal;
 
-public class AbstractAnimal implements Animal {
+public abstract class AbstractAnimal {
     protected String breed;
     protected String name;
     protected Double cost;
+    protected String character;
 
 
-    public String getBreed() {
+    abstract public String getBreed() {
         return breed;
     }
 
-    public void setBreed(String breed) {
+    abstract public void setBreed(String breed) {
         this.breed = breed;
     }
 
-    public String getName() {
+    abstract public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    abstract public void setName(String name) {
         this.name = name;
     }
 
 
-    public Double getCost() {
+    abstract public Double getCost() {
         return cost;
     }
 
-    public void setCost(Double cost) {
+    abstract public void setCost(Double cost) {
         this.cost = cost;
     }
 
 
-    public String getCharacter() {
+    abstract public String getCharacter() {
         return character;
     }
 
-    public void setCharacter(String character) {
+    abstract public void setCharacter(String character) {
         this.character = character;
     }
 
-    protected String character;
 
     @Override
     public void character() {
@@ -49,19 +49,9 @@ public class AbstractAnimal implements Animal {
 
     @Override
     public void breed() {
-
-    }
-
-    @Override
-    public void name() {
-
-    }
-
-    @Override
-    public void cost() {
-
     }
 }
+
 
 
 

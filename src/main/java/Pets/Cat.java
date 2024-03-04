@@ -4,6 +4,9 @@ public class Cat extends Pet {
     private String name;
     private String color;
 
+    public Cat() {
+    }
+
     public String getName() {
         return name;
     }
@@ -20,7 +23,12 @@ public class Cat extends Pet {
         this.color = color;
     }
 
-    public Cat(String x) {
+    public Cat() {
         name = x;
+    }
+
+    @Override
+    public void voice() {
+        System.out.println("Мяу!");
     }
 }
