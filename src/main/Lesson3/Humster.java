@@ -1,8 +1,12 @@
-package Pets;
-public class Dog extends Pet {
+package Lesson3;
 
+public class Humster extends Pet {
     private String name;
     private String color;
+
+    public Humster(String breed, String name, double cost, String character) {
+        super(breed, name, cost, character);
+    }
 
     public String getName() {
         return name;
@@ -10,6 +14,11 @@ public class Dog extends Pet {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void setCharacter(String character) {
+
     }
 
     public String getColor() {
@@ -20,13 +29,8 @@ public class Dog extends Pet {
         this.color = color;
     }
 
-    public Dog() {
+    public void Cat(String x) {
         name = x;
     }
 
-    @Override
-    public void voice() {
-        System.out.println("Гав-гав!");
-    }
-
-};
+} ;

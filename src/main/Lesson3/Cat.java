@@ -1,10 +1,15 @@
-package Pets;
+package Lesson3;
 
 public class Cat extends Pet {
     private String name;
     private String color;
 
+    public Cat(String breed, String name, double cost, String character) {
+        super(breed, name, cost, character);
+    }
+
     public Cat() {
+        super();
     }
 
     public String getName() {
@@ -22,13 +27,16 @@ public class Cat extends Pet {
     public void setColor(String color) {
         this.color = color;
     }
-
-    public Cat() {
-        name = x;
-    }
-
     @Override
     public void voice() {
         System.out.println("Мяу!");
+    }
+
+    @Override
+    public void setCharacter(String character) {
+
+    }
+
+    public void breed() {
     }
 }

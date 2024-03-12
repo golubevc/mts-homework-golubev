@@ -1,6 +1,6 @@
-package Predators;
+package Lesson3;
+public class Dog extends Pet {
 
-public class Shark extends Predator {
     private String name;
     private String color;
 
@@ -20,8 +20,15 @@ public class Shark extends Predator {
         this.color = color;
     }
 
-    public Shark(String x) {
+    public Dog() {
         name = x;
     }
 
+    @Override
+    public void voice() {
+        System.out.println("Гав-гав!");
+    }
+
+    public void breed() {
+    }
 }
