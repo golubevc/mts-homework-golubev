@@ -12,6 +12,9 @@ public abstract class AbstractAnimal implements Animal {
         this.cost = cost;
         this.character = character;
     }
+
+    protected AbstractAnimal() {
+    }
     public String getBreed(){
         return breed;
     }
