@@ -1,9 +1,15 @@
 package Lesson3;
 
 public class Cat extends Pet {
-    public Cat() {
-        name = "Cat";
+
+
+    public Cat(String breed, String name, double cost, String character) {
+        super(breed, name, cost, character);
     }
+    public Cat() {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "Cat{" +
@@ -12,5 +18,7 @@ public class Cat extends Pet {
                 ", cost=" + cost +
                 ", character='" + character + '\'' +
                 '}';
+
+
     }
     }
