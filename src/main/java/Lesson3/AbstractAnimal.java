@@ -1,5 +1,4 @@
 package Lesson3;
-
 import java.time.LocalDate;
 
 public abstract class AbstractAnimal implements Animal {
@@ -7,8 +6,7 @@ public abstract class AbstractAnimal implements Animal {
     protected String name; // имя
     protected Double cost; //цена в магазине
     protected String character; // характер
-
-    protected LocalDate birthDate;
+    protected LocalDate birthDate; //День рождения
 
 
     public AbstractAnimal(String breed, String name, double cost, String character) {
@@ -16,6 +14,7 @@ public abstract class AbstractAnimal implements Animal {
         this.name = name;
         this.cost = cost;
         this.character = character;
+        this.birthDate = birthDate;
     }
 
     protected AbstractAnimal() {
@@ -32,12 +31,15 @@ public abstract class AbstractAnimal implements Animal {
     public String getCharacter(){
         return character;
     }
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
 
     @Override
     public String toString(){
         return "Created Animal: " +
                 name + ", " + breed +
-                ", " + cost + ", " + character;
+                ", " + cost + ", " + character + ", " + birthDate;
 
     }
 }

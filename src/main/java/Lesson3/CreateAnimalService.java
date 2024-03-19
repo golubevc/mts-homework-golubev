@@ -1,7 +1,7 @@
 package Lesson3;
 
 public interface CreateAnimalService {
-    default void createAnimal(){
+    default void createAnimal() throws InvalidAnimalException{
         System.out.println("Метод 1 ---CreateAnimalService");
         Animal[] animal = new Animal[10];
         int i = 0;
