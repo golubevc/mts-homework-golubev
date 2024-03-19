@@ -1,5 +1,7 @@
 package Lesson3;
 
+import java.time.LocalDate;
+
 public class Cat extends Pet {
 
 
@@ -21,4 +23,8 @@ public class Cat extends Pet {
 
 
     }
+    @Override
+    public LocalDate getBirthDate() {
+        return null;
     }
+}

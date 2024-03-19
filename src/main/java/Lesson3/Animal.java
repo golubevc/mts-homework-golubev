@@ -1,6 +1,7 @@
 package Lesson3;
 
 import javax.lang.model.element.Name;
+import java.time.LocalDate;
 
 public interface Animal {
 
@@ -8,5 +9,6 @@ public interface Animal {
     String getName();
     double getCost();
     String getCharacter();
+    LocalDate getBirthDate();
 
 }
