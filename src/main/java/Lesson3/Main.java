@@ -1,9 +1,9 @@
 package Lesson3;
 
-import java.sql.SQLOutput;
+import java.time.LocalDate;
 
 public class Main {
-    public static void main(String[] args Animal Animal) throws InvalidAnimalException, InvalidAnimalBirthDateException {
+    public static void main(String[] args) throws InvalidAnimalException, InvalidAnimalBirthDateException {
         CreateAnimalService createAnimalService = new CreateAnimalServiceImpl();
         createAnimalService.createAnimal();
 
@@ -12,7 +12,5 @@ public class Main {
         createAnimalServiceImpl.createAnimal();
 
         SearchServiceImpl searchserviceimpl = new SearchServiceImpl();
-        searchserviceimpl.checkLeapYearAnimal();
-
-        }
     }
+}

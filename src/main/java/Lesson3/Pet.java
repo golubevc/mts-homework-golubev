@@ -11,6 +11,7 @@ public class Pet extends AbstractAnimal {
                 character,
                 birthDate);
     }
+    public LocalDate getBirthday(){ return this.birthDate; }
 
     protected Pet() {
     }

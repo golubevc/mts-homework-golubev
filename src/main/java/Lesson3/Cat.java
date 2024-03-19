@@ -8,7 +8,9 @@ public class Cat extends Pet {
     public Cat(String breed, String name, double cost, String character, LocalDate birthDate) {
         super(breed, name, cost, character, birthDate);
     }
+
     public Cat() {
+        super();
         this.name = name;
         this.birthDate = birthDate;
     }
@@ -23,9 +25,5 @@ public class Cat extends Pet {
                 '}';
 
 
-    }
-    @Override
-    public LocalDate getBirthDate() {
-        return null;
     }
 }
