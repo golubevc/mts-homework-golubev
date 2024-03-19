@@ -1,15 +1,18 @@
 package Lesson3;
 
 
-public abstract class Pet extends AbstractAnimal {
-    public Pet(String breed, String name, double cost, String character) {
-        super(breed, name, cost, character);
+import java.time.LocalDate;
+
+public class Pet extends AbstractAnimal {
+    public Pet(String breed, String name, double cost, String character, LocalDate birthDate) {
+        super(breed,
+                name,
+                cost,
+                character,
+                birthDate);
     }
 
     protected Pet() {
     }
 
-    public String getCharacter() {
-        return character;
-    }
 }

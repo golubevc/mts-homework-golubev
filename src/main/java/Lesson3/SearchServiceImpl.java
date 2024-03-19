@@ -2,11 +2,11 @@ package Lesson3;
 import java.util.Objects;
 import java.time.LocalDate;
 
-class SearchServiceImpl implements SearchService {
+public class SearchServiceImpl implements SearchService {
     LocalDate today = LocalDate.now();
-
-    public void checkLeapYearAnimal(AbstractAnimal Animal) throws InvalidAnimalException, InvalidAnimalBirthDateException {
-        if (Objects.isNull(Animal)) {
+    @Override
+    public void checkLeapYearAnimal(Animal animal) throws InvalidAnimalException, InvalidAnimalBirthDateException {
+        if (Objects.isNull()) {
             throw new InvalidAnimalException("на вход пришло некорректный объект животного" + today);
         } else if (Animal.getBirthDate() == null) {
             throw new InvalidAnimalException(Animal.getName());

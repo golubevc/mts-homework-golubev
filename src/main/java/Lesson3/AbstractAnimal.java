@@ -1,7 +1,7 @@
 package Lesson3;
 import java.time.LocalDate;
 
-public abstract class AbstractAnimal implements Animal {
+public abstract class AbstractAnimal<birthDate> implements Animal {
     protected String breed; //порода
     protected String name; // имя
     protected Double cost; //цена в магазине
@@ -9,7 +9,7 @@ public abstract class AbstractAnimal implements Animal {
     protected LocalDate birthDate; //День рождения
 
 
-    public AbstractAnimal(String breed, String name, double cost, String character) {
+    public AbstractAnimal(String breed, String name, double cost, String character, LocalDate birthDate) {
         this.breed = breed;
         this.name = name;
         this.cost = cost;

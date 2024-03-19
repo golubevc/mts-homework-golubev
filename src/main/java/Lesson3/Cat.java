@@ -5,11 +5,12 @@ import java.time.LocalDate;
 public class Cat extends Pet {
 
 
-    public Cat(String breed, String name, double cost, String character) {
-        super(breed, name, cost, character);
+    public Cat(String breed, String name, double cost, String character, LocalDate birthDate) {
+        super(breed, name, cost, character, birthDate);
     }
     public Cat() {
         this.name = name;
+        this.birthDate = birthDate;
     }
 
     @Override

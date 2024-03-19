@@ -6,9 +6,9 @@ import java.time.LocalDate;
 public interface Animal {
 
     String getBreed();
-    String getName();
+    static String getName();
     double getCost();
     String getCharacter();
-    LocalDate getBirthDate();
+    static LocalDate getBirthDate();
 
 }
