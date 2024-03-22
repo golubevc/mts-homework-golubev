@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class SearchServiceImpl implements SearchService {
     LocalDate today = LocalDate.now();
-    public void checkLeapYearAnimal(AbstractAnimal animal) throws InvalidAnimalException, InvalidAnimalBirthDateException {
+    public void checkLeapYearAnimal(Animal animal) throws InvalidAnimalException, InvalidAnimalBirthDateException {
         if (animal == null) {
             throw new InvalidAnimalException("на вход пришло некорректный объект животного" + today);
         } else if (animal.getBirthDate() == null) {

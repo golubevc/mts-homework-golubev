@@ -1,7 +1,7 @@
 package Lesson3;
 import java.time.LocalDate;
 
-public abstract class AbstractAnimal<birthDate> implements Animal {
+public abstract class AbstractAnimal implements Animal {
     protected String breed; //порода
     protected String name; // имя
     protected Double cost; //цена в магазине
