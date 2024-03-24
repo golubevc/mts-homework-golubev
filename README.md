@@ -1,14 +1,14 @@
 **Тема: ООП + основные конструкции**
 Построить иерархию животных в виде наследуемых классов.
 Пример:
-Наследники Lesson3.Predator и Lesson3.Pet могут отличаться, остальная
+Наследники Lesson3.Model.Predator и Lesson3.Model.Pet могут отличаться, остальная
 иерархия должна соблюдаться.
 ● Интерфейс Animal имеет 4 метода
 ○ getBreed();
 ○ getName();
 ○ getCost();
 ○ getCharacter();
-● Абстрактный класс Lesson3.AbstractAnimal имеет 5 полей:
+● Абстрактный класс Lesson3.Model.AbstractAnimal имеет 5 полей:
 ○ protected String breed; // порода
 ○ protected String name; // имя
 ○ protected Double cost; // цена в магазине
