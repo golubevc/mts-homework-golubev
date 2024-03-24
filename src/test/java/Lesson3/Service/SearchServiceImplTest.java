@@ -26,7 +26,6 @@ public class SearchServiceImplTest {
     @DisplayName("Создание Cat в невисокосный год")
     public void whenCreatedCat_NotLeapYear() throws InvalidAnimalException,InvalidAnimalBirthDateException {
         Animal testCat2 = new Cat("МЯВ", "Котяра", 123, "Хороший", LocalDate.parse("2023-03-28"));
-        SearchServiceImpl searchService = new SearchServiceImpl();
         String actualMessage = (testCat2.getName() + " был рожден в невисокосный год");
         String expectedMessage = "Котяра был рожден в невисокосный год";
         Assertions.assertEquals(actualMessage,expectedMessage);
@@ -46,7 +45,6 @@ public class SearchServiceImplTest {
         SearchServiceImpl ssi = new SearchServiceImpl();
         InvalidAnimalException exception = Assertions.assertThrows(InvalidAnimalException.class, () -> ssi.checkLeapYearAnimal(testCat4));
         String expectedMessage = "Пустой объект по имени на вход пришло некорректный объект животного2024-03-24";
-        System.out.println(exception.getMessage());
         String actualMessage = String.valueOf(exception.getMessage());
         Assertions.assertEquals(actualMessage, expectedMessage);
     }
