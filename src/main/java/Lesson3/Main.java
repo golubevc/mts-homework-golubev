@@ -1,11 +1,8 @@
 package Lesson3;
 
-import java.awt.image.ImagingOpException;
-import java.sql.SQLOutput;
-import java.time.LocalDate;
-
 public class Main {
     public static void main(String[] args) throws InvalidAnimalException, InvalidAnimalBirthDateException {
+
         CreateAnimalService createAnimalService = new CreateAnimalServiceImpl();
         createAnimalService.createAnimal();
 
@@ -13,12 +10,19 @@ public class Main {
         createAnimalServiceImpl.createAnimal(5);
         createAnimalServiceImpl.createAnimal();
 
+
         try {
             SearchServiceImpl searchserviceimpl = new SearchServiceImpl();
-            Animal dog2 = new Dog();
-            Animal dog3 = new Cat("МЯУ", "а", 1233, "Неплохой", null);
-            searchserviceimpl.checkLeapYearAnimal(dog2);
-        } catch (InvalidAnimalException e){
+            Animal MainCat = new Cat("МЯУ", "Котяра", 1233, "Неплохой", null);
+            searchserviceimpl.checkLeapYearAnimal(MainCat);
+        } catch (InvalidAnimalBirthDateException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            SearchServiceImpl searchserviceimpl = new SearchServiceImpl();
+            Animal MainCat1 = null;
+            searchserviceimpl.checkLeapYearAnimal(MainCat1);
+        }catch (InvalidAnimalException e) {
             System.out.println(e.getMessage());
         }
     }
