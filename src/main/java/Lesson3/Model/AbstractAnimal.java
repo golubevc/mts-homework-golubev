@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson3.Model;
 import java.time.LocalDate;
 
 public abstract class AbstractAnimal implements Animal {

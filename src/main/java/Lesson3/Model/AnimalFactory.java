@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson3.Model;
 
 import java.time.LocalDate;
 import java.util.Random;

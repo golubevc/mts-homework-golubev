@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson3.Model;
 
 public class Shark extends Predator {
 

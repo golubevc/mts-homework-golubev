@@ -1,4 +1,7 @@
-package Lesson3;
+package Lesson3.Service;
+import Lesson3.Model.Animal;
+import Lesson3.Model.AnimalFactory;
+
 import java.util.Random;
 
 public class CreateAnimalServiceImpl implements CreateAnimalService{

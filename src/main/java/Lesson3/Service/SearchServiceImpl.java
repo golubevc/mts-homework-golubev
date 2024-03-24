@@ -1,4 +1,8 @@
-package Lesson3;
+package Lesson3.Service;
+import Lesson3.Model.Animal;
+import Lesson3.Exception.InvalidAnimalBirthDateException;
+import Lesson3.Exception.InvalidAnimalException;
+
 import java.time.LocalDate;
 
 public class SearchServiceImpl implements SearchService {
