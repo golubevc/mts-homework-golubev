@@ -7,11 +7,8 @@ public class Wolf extends Predator {
         super(breed, name, cost, character, birthDate);
     }
 
-    public Wolf() {
-        this.name = name;
-        this.birthDate = birthDate;
-    }
+    @Override
+    @Override
+    public Wolf();
 
-    public Wolf(String ауф, String волчара1, double v, String голодныйКакТварь) {
-    }
 }

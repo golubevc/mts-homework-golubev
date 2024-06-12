@@ -3,7 +3,7 @@ package Lesson3.Model;
 
 import java.time.LocalDate;
 
-public class Pet extends AbstractAnimal {
+public abstract class Pet extends AbstractAnimal {
     public Pet(String breed, String name, double cost, String character, LocalDate birthDate) {
         super(breed,
                 name,
@@ -11,6 +11,13 @@ public class Pet extends AbstractAnimal {
                 character,
                 birthDate);
     }
+
+    @Override
+    public abstract Pet();
+
+    @Override
+    public abstract Pet();
+
     public LocalDate getBirthday(){ return this.birthDate; }
 
     protected Pet() {

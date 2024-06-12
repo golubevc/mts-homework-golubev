@@ -3,13 +3,9 @@ package Lesson3.Model;
 import java.time.LocalDate;
 
 public class Humster extends Pet {
-    public Humster() {
-        name = "Хомячелло";
+    public Humster(String breed, String name, double cost, String character, LocalDate birthDate){
+        super(breed, name, cost, character, birthDate);
     }
-    public LocalDate birthDate;
-
     @Override
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
+    public Humster();
 }

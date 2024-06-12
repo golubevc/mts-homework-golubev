@@ -7,13 +7,6 @@ public class Dog extends Pet {
     public Dog(String breed, String name, double cost, String character, LocalDate birthDate) {
         super(breed, name, cost, character, birthDate);
     }
-
-    public Dog() {
-
-    }
-
     @Override
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
+    public Dog();
 }

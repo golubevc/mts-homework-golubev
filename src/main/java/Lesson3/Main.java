@@ -9,24 +9,34 @@ import Lesson3.Service.CreateAnimalServiceImpl;
 import Lesson3.Service.SearchServiceImpl;
 
 public class Main {
-    public static void main(String[] args) throws InvalidAnimalException, InvalidAnimalBirthDateException {
-
-        CreateAnimalService createAnimalService = new CreateAnimalServiceImpl();
-        createAnimalService.createAnimal();
-
-        CreateAnimalServiceImpl createAnimalServiceImpl = new CreateAnimalServiceImpl();
-        createAnimalServiceImpl.createAnimal(5);
-        createAnimalServiceImpl.createAnimal();
+    public static void main(String[] args) throws RuntimeException, InvalidAnimalBirthDateException {
 
 
+        try {
+            CreateAnimalServiceImpl createAnimalService = new CreateAnimalServiceImpl();
+            createAnimalService.createanimals();
+        } catch (InvalidAnimalException e) {
+            throw new RuntimeException(e);
+        }
         try {
             SearchServiceImpl searchserviceimpl = new SearchServiceImpl();
             Animal MainCat = new Cat("МЯУ", "Котяра", 1233, "Неплохой", null);
             searchserviceimpl.checkLeapYearAnimal(MainCat);
-        } catch (InvalidAnimalBirthDateException e) {
-            System.out.println(e.getMessage());
-        } catch (InvalidAnimalException e) {
+        } catch (InvalidAnimalBirthDateException | InvalidAnimalException e) {
             System.out.println(e.getMessage());
         }
+       /* try {
+            CreateAnimalServiceImpl createAnimalService = new CreateAnimalServiceImpl();
+            createAnimalService.createAnimal(2);
+        } catch (InvalidAnimalException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            CreateAnimalServiceImpl createAnimalService = new CreateAnimalServiceImpl();
+            createAnimalService.createAnimal();
+        } catch (InvalidAnimalException e) {
+            throw new RuntimeException(e);
+        }*/
+
     }
 }
